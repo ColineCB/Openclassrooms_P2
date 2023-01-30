@@ -54,7 +54,6 @@ a {
     align-items: flex-end;
     height: 80px;
     margin-bottom: 3%;
-
 }
 
 .main_header img {
@@ -84,7 +83,7 @@ a:hover {
 }
 
 .main_header a:hover {
-    border-top: solid 3px #0065FC;
+    border-top: solid 4px #0065FC;
 }
 
 
@@ -92,10 +91,8 @@ a:hover {
 /* ici se trouve tout ce qui concerne le main, soit la section .search , la section .accomodation (elle-même composée de .lodging et du aside) et la section . activities */
 
 main {
-    background-color: pink;
+    margin-bottom: 3%;
 }
-
-
 
 /* ici se trouve ce qui concerne la section .search : .search_header (titre et p), le formulaire, les filtres de recherche et le .search_footer */
 
@@ -112,9 +109,65 @@ main {
 
 form {
     margin-bottom: 15px;
-    border: solid 0.5px #F2F2F2;
-    width: 381px;
+    border-radius: 15px;
+    width: 30%;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.icone_location {
+    flex-grow: 1;
+    height: 49px;
+    width: 40px;
+    border-radius: 15px 0 0 15px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone_location i {
+    color: #000000;
+}
+
+.search_zone {
+    flex-grow: 3;
+    height: 49px;
+    border-top: #F2F2F2 solid 1px;
+    border-bottom: #F2F2F2 solid 1px;
+    display: flex;
+}
+
+.search_zone input {
+    flex-grow: 1;
+    border: none;
+    padding-left: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.btn {
+    flex-grow: 2;
+    height: 49px;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+}
+
+.btn input {
+    flex-grow: 1;
+    align-items: center;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    background-color: #0065FC;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.magnifying_glass {
+    display: none;
 }
 
 /* revoir toute la section filters (changement des dimensions des icônes */ 
@@ -123,6 +176,7 @@ form {
     margin-bottom: 15px;
     display: flex;
     width: 914px;
+    background-color: pink;
 }
 
 .filters span {
