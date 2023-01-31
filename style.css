@@ -15,19 +15,19 @@
 /* ici sont rangées toutes les propriétés génériques, qui s'appliquent à tous les éléments identiques de la page */
 
 h1 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 1.1em;
+    font-size: 1.4em;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: bold;
     margin-bottom: 8px;
 }
@@ -180,7 +180,7 @@ form {
     font-weight: bold;
 }
 
-.filters h2 {
+.filters h3 {
     margin-bottom: 0;
 }
 
@@ -234,7 +234,7 @@ form {
     margin-bottom: 30px;
     display: grid;
     grid-template-columns: 880px 480px;
-    gap: 40px;
+    gap: 45px;
 }
 
 .box {
@@ -247,14 +247,18 @@ form {
 /* ici se trouve tout ce qui concerne la section .lodging ("Hébergement à Marseille") : header avec titre + div .lodging_cards (contenant les 6 .cards) */ 
 
 .lodging {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .lodging_cards {
     display: flex;
     flex-wrap: wrap;
-    
+    background-color: pink;
 }
+
+
 
 .cards {
     border-radius: 20px;
