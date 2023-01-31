@@ -33,7 +33,7 @@ h3 {
 }
 
 p {
-    font-size: 0.85em;
+    font-size: 0.9em;
 }
 
 i {
@@ -244,44 +244,53 @@ form {
     padding: 50px 35px 35px 35px;
 }
 
-/* ici se trouve tout ce qui concerne la section .lodging ("Hébergement à Marseille") : header avec titre + div .lodging_cards (contenant les 6 .cards) */ 
+/* ici se trouve tout ce qui concerne la section .lodging ("Hébergement à Marseille") : header + .lodging_cards (contenant les 6 .cards) + footer */ 
 
-.lodging {
+#lodging {
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.lodging_cards {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: pink;
+.lodging_header {
+    height: 10%;
 }
 
-
+.lodging_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+}
 
 .cards {
     border-radius: 20px;
     width: 30%;
-    height: 190px;
+    height: 200px;
     padding: 5px;
-    margin-right: 20px;           /* problème avec les marges entre les cards */ 
-    background-color: #FFFFFF;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .cards img {
     width: 100%;
-    height: 110px;
+    height: 120px;
     border-radius: 20px 20px 0 0; 
     object-fit: cover;
 }
 
 .cards_txt {
-    padding-left: 5%;
+    padding-left: 10px;
 }
 
 .cards_txt p {
-    padding-bottom: 5px;
+    padding-bottom: 2px;
+}
+
+.lodging_footer {
+    font-weight: bold;
+    font-size: 1.4em;
 }
 
 /* ici se trouve tout ce qui concerne le aside ("Les plus populaires) */ 
