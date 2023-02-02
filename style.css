@@ -8,7 +8,7 @@
 
 .container {
     max-width: 1400px;
-    width: 95%;
+    width: 100%;
     margin: auto;
 }
 
@@ -91,7 +91,7 @@ a:hover {
 /* ici se trouve tout ce qui concerne le main, soit la section .search , la section .accomodation (elle-même composée de .lodging et du aside) et la section . activities */
 
 main {
-    margin-bottom: 3%;
+    margin-bottom: 4%;
 }
 
 /* ici se trouve ce qui concerne la section .search : .search_header (titre et p), le formulaire, les filtres de recherche et le .search_footer */
@@ -99,18 +99,17 @@ main {
 .search {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 3%;
 }
 
 .search_header {
-    margin-bottom: 15px;
+    margin-bottom: 1.5%;
 }
 
 form {
-    margin-bottom: 15px;
+    margin-bottom: 1.5%;
     border-radius: 15px;
     width: 30%;
-    height: 49px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -165,14 +164,12 @@ form {
     color: #FFFFFF;
 }
 
-.magnifying_glass {
+.btn .magnifying_glass {
     display: none;
 }
 
-
-
 .filters {
-    margin-bottom: 15px;
+    margin-bottom: 1.5%;
     display: flex;
     align-items: center;
     width: 70%;
@@ -189,7 +186,6 @@ form {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 50px;
 }
 
 .filters_elements :hover {
@@ -221,24 +217,20 @@ form {
     border: 1px solid #D9D9D9;
     border-radius: 20px;
     padding-left: 0.8%;
-    padding-top: 0.2%;
-    margin-right: 10px;
+    padding-top: 0.8%;
+    margin-right: 1%;
 }
-
-
-
 
 /* ici se trouve tout ce qui concerne la section .accomodation c'est à dire les deux .box (. box lodging et .box le aside) */ 
 
 .accomodation {
-    margin-bottom: 30px;
+    margin-bottom: 3%;
     display: grid;
     grid-template-columns: 890px 450px;
-    gap: 60px;
+    gap: 4%;
 }
 
 .box {
-    height: 630px;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 45px 35px 35px 35px;
@@ -250,8 +242,7 @@ form {
 
 /* ici se trouve tout ce qui concerne la section .lodging ("Hébergement à Marseille") : header + .lodging_cards (contenant les 6 .cards) + footer */ 
 
-#lodging {
-    height: 550px;
+.lodging {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -271,8 +262,8 @@ form {
 .cards {
     border-radius: 20px;
     width: 30%;
-    height: 200px;
-    padding: 5px;
+    height: 43%;
+    padding: 0.7%;
     background-color: #ffffff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -285,11 +276,11 @@ form {
 }
 
 .cards_txt {
-    padding-left: 10px;
+    padding-left: 3%;
 }
 
 .cards_txt p {
-    padding-bottom: 2px;
+    padding-bottom: 1%;
 }
 
 .lodging_footer {
@@ -298,10 +289,6 @@ form {
 }
 
 /* ici se trouve tout ce qui concerne le aside ("Les plus populaires) */ 
-
-aside {
-    padding: 20px;
-}
 
 .popular_header {
     display: flex;
@@ -313,9 +300,8 @@ aside {
 .popular_cards {
     border-radius: 20px;
     width: 100%;
-    height: 150px;
-    margin-bottom: 20px;
-    padding: 5px;
+    margin-bottom: 8%;
+    padding: 1.5%;
     background-color: #FFFFFF;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -332,7 +318,7 @@ aside {
 }
 
 .popular_cards_info {
-    margin: 15px;
+    margin: 4%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -355,7 +341,7 @@ aside {
     border-radius: 5px;
     flex-grow: 1;
     width: 100%;
-    height: 450px;
+    height: 105%;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -368,9 +354,8 @@ aside {
 }
 
 .activities_cards a h3 {
-    margin-left: 20px;
+    margin-left: 5%;
 }
-
 
 /* fin du main */
 
@@ -378,7 +363,6 @@ aside {
 
 .main_footer {
     background-color: #F2F2F2;
-    height: 191px;
     display: flex;
     padding: 50px;
 }
