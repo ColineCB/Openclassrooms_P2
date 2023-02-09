@@ -4,38 +4,30 @@
     margin:0px;
     padding: 0px;
     cursor: default;
+    font-size: 1em; 
 }
 
 .container {
     max-width: 1400px;
-    width: 100%;
+    width: 95%;
     margin: auto;
-    padding-left: 70px;
-    padding-right: 70px;
 }
 
 /* ici sont rangées toutes les propriétés génériques, qui s'appliquent à tous les éléments identiques de la page */
 
 h1 {
-    font-size: 1.5em;
+    font-size: larger;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 1.4em;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 1.1em;
     font-weight: bold;
     margin-bottom: 8px;
-}
-
-p {
-    font-size: 0.9em;
 }
 
 i {
@@ -43,6 +35,7 @@ i {
 }
 
 a {
+    width: 100%;
     text-decoration: none;
     color: #000000;
 }
@@ -58,7 +51,7 @@ a {
     margin-bottom: 3%;
 }
 
-.main_header img {
+.logo {
     width: 61px;
     height: 29px;
 }
@@ -88,9 +81,7 @@ a:hover {
     border-top: solid 4px #0065FC;
 }
 
-
-
-/* ici se trouve tout ce qui concerne le main, soit la section .search , la section .accomodation (elle-même composée de .lodging et du aside) et la section . activities */
+/* ici se trouve tout ce qui concerne le main, soit la section .search , la section .accomodation et la section . activities */
 
 main {
     margin-bottom: 4%;
@@ -118,8 +109,8 @@ form {
 }
 
 .icone_location {
-    padding: 25px 20px;
-    border-radius: 15px 0 0 15px;
+    padding: 1.5em 1em;
+    border-radius: 20px 0 0 20px;
     background-color: #F2F2F2;
     color: #000000;
     display: flex;
@@ -127,11 +118,8 @@ form {
     align-items: center;
 }
 
-.search_zone {
-    width: 60%;
-    height: 49px;              /* je ne peux ni enlever le height, ni le passer en % */ 
-    padding-left: 20px;
-    font-size: 1.1em;
+.search_zone {                            /* toujours problème de la taille de la zone de texte */
+    padding-left: 1.2em;
     font-weight: bold;
     border-left: none;
     border-right: none;
@@ -139,14 +127,15 @@ form {
     border-bottom: #F2F2F2 solid 1px;
 }
 
-.btn {                          /* problème avec la taille du mot "rechercher" quand on réduit la taille de l'écran a 992px*/
-    width: 27%;
-    height: 49px;
-    padding: 0 3% 0 2%;
-    border-radius: 0 15px 15px 0;
+.search_zone input::placeholder {          /* test pour mettre les mots "Marseille, France" en noir, échec, à revoir */ 
+    opacity: 1;
+}
+
+.btn {
+    padding: 1.2em;
+    border-radius: 0 20px 20px 0;
     border: none;
     background-color: #0065FC;
-    font-size: 1.1em;
     font-weight: bold;
     color: #FFFFFF;
 }
@@ -156,16 +145,15 @@ form {
 }
 
 .filters {
-    margin-bottom: 1.5%;
+    margin-bottom: 1.5em;
     display: flex;
     align-items: center;
     width: 70%;
-    font-size: 1em;
     font-weight: bold;
 }
 
-.filters h3 {
-    margin-bottom: 0;
+.filter_name {
+    padding: 1em;
 }
 
 .filters_elements {
@@ -184,16 +172,15 @@ form {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    height: 50px;                        /* je ne peux pas enlever ce height sinon mes boutons filtres sont trop petits */ 
     border: solid 2px #D9D9D9;
     border-radius: 30px;
-    margin-left: 4%;
+    margin-left: 2em;       /*test*/
 }
 
-.element i {
-    margin: 0 10px 0 20px;
+.icone {
+    padding: 1em 0 1em 1em;  /*test*/
 }
-                                        /* je n'arrive pas à régler la taille des h3 "economique", "familial", ... pour qu'ils rapetissent en 992px */
+
 .search_footer {
     display: flex;
     align-items: center;
@@ -204,8 +191,8 @@ form {
     height: 30px;
     border: 1px solid #D9D9D9;
     border-radius: 20px;
-    padding-left: 0.8%;
-    padding-top: 0.8%;
+    padding-left: 0.9em;
+    padding-top: 0.9em;
     margin-right: 1%;
 }
 
@@ -233,11 +220,12 @@ form {
 .lodging {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .lodging_header {
-    height: 10%;
+    font-size: larger;
+    margin-bottom: 1em;
 }
 
 .lodging_cards {
@@ -276,7 +264,7 @@ form {
 
 .lodging_footer {
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: large;
 }
 
 /* ici se trouve tout ce qui concerne le aside ("Les plus populaires) */ 
@@ -287,6 +275,7 @@ form {
     align-items: center;
     height: 10%;
     margin-bottom: 20px;
+    font-size: larger;
 }
 
 .popular_cards {
@@ -322,6 +311,11 @@ form {
 }
 
 /* ici se trouve tout ce qui concerne la section .activities */
+
+.activities h2 {
+    font-size: larger;
+    margin-bottom: 1em;
+}
 
 .activities_cards {
     display: grid;
@@ -378,13 +372,13 @@ form {
 }
 
 .footer_zone a {
-    margin-bottom: 8px;
+    padding-top: 1em;
 }
 
 
 /* ici se trouvent les media queries */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
 
     .filters {
         width: 95%;
@@ -417,5 +411,133 @@ form {
 }
 
 @media screen and (max-width: 767px) {
+
+    .container {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .main_header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2em;
+        border-bottom: solid 3px #F2F2F2;
+    }
+
+    .logo {
+        margin-bottom: 2em;
+    }
+
+    .main_header a {
+        padding: 1.3em;
+    }
+
+    li {
+        margin: 0 3em 0 3em;
+    }
+
+    .main_header a:hover {
+        border-top: none;
+        border-bottom: solid 3px #0065FC;
+    }
+
+    .search {
+        padding: 0 1em 0 1em;
+    }
+
+    form {
+        padding: 1em 0 1em 0;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .magnifying_glass::before {
+        display: inline;
+        padding: 1em;
+        border-radius: 0 20px 20px 0;
+        border: none;
+        background-color: #0065FC;
+        color: #FFFFFF;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filters_elements {
+        padding-top: 1.5em;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 1.5em;
+    }
+
+    .element {
+        margin-left: 0px; 
+    }
+
+    .accomodation {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .box {
+        border-radius: 0%; 
+        padding: 45px 15px 15px 15px;
+    }
+
+    aside {
+        margin-bottom: 30px; 
+    }
+
+    .most_popular {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lodging {
+        background-color: #ffffff;
+    }
+
+    .lodging_cards {
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .lodging_footer {
+        display: none;
+    }
+
+    .activities {
+        padding: 0px 15px 50px 15px;
+    }
+
+    .activities_cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activities_cards a {
+        margin-bottom: 1em;
+    }
+
+    .main_footer {
+        flex-direction: column;
+    }
+
+    .footer_zone {
+        padding-bottom: 2em;
+    }
+
+    .footer_zone h2 {
+        font-size: larger;
+        font-weight: bolder;
+    }
 
 }
