@@ -118,8 +118,8 @@ form {
     align-items: center;
 }
 
-.search_zone {                            /* toujours problème de la taille de la zone de texte */
-    padding-left: 1.2em;
+.search_zone {
+    padding: 1.2em 1em 1.2em 1.2em;   /* test pour augmenter la hauteur de la zone de texte sans toucher au height */ 
     font-weight: bold;
     border-left: none;
     border-right: none;
@@ -129,6 +129,11 @@ form {
 
 .search_zone input::placeholder {          /* test pour mettre les mots "Marseille, France" en noir, échec, à revoir */ 
     opacity: 1;
+    color:#000000;
+}
+
+.search_zone input :active {
+    border: none; 
 }
 
 .btn {
