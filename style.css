@@ -13,7 +13,7 @@
     margin: auto;
 }
 
-/* ici sont rangées toutes les propriétés génériques, qui s'appliquent à tous les éléments identiques de la page */
+/* propriétés génériques */
 
 h1 {
     font-size: larger;
@@ -41,7 +41,7 @@ a {
 }
 
 
-/* ici se trouvent tout ce qui concerne le .main_header, c'est à dire le bandeau avec logo Booki et menu de navigation */ 
+/* .main_header : bandeau avec logo Booki et menu de navigation */ 
 
 .main_header {
     display: flex;
@@ -62,12 +62,13 @@ ul {
 }
 
 li {
-    margin-left: 95px;
+    padding: 57px 20px 0px 20px;
+    margin-left: 40px;
 }
 
-.main_header a {
-    padding-top: 58px;
-}
+li:hover {
+    border-top: solid 4px #0065FC;
+} 
 
 a:visited {
     color: #000000;
@@ -77,17 +78,13 @@ a:hover {
     color:#0065FC;
 }
 
-.main_header a:hover {
-    border-top: solid 4px #0065FC;
-}
-
-/* ici se trouve tout ce qui concerne le main, soit la section .search , la section .accomodation et la section . activities */
+/* main : section .search , section .accomodation et section .activities */
 
 main {
     margin-bottom: 4%;
 }
 
-/* ici se trouve ce qui concerne la section .search : .search_header (titre et p), le formulaire, les filtres de recherche et le .search_footer */
+/* section .search : .search_header (titre et p), formulaire, filtres de recherche et .search_footer */
 
 .search {
     display: flex;
@@ -105,7 +102,6 @@ form {
     width: 31%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .icone_location {
@@ -119,7 +115,7 @@ form {
 }
 
 .search_zone {
-    padding: 1.2em 1em 1.2em 1.2em;   /* test pour augmenter la hauteur de la zone de texte sans toucher au height */ 
+    padding: 1.2em 1em 1.2em 1.2em;
     font-weight: bold;
     border-left: none;
     border-right: none;
@@ -127,13 +123,8 @@ form {
     border-bottom: #F2F2F2 solid 1px;
 }
 
-.search_zone input::placeholder {          /* test pour mettre les mots "Marseille, France" en noir, échec, à revoir */ 
-    opacity: 1;
-    color:#000000;
-}
-
-.search_zone input :active {
-    border: none; 
+.search_zone:focus {
+    outline: none; 
 }
 
 .btn {
@@ -153,33 +144,31 @@ form {
     margin-bottom: 1.5em;
     display: flex;
     align-items: center;
-    width: 70%;
     font-weight: bold;
 }
 
 .filter_name {
-    padding: 1em;
+    padding: 1em; /* test */
 }
 
 .filters_elements {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    width: 95%;
 }
 
 .filters_elements .element:hover {
     background-color: #deebff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.05);
 }
 
 .element {
     display: flex;
     align-items: center;
-    flex-grow: 1;
     border: solid 2px #D9D9D9;
     border-radius: 30px;
-    margin-left: 2em;       /*test*/
+    margin-left: 3em;       /*test*/
 }
 
 .icone {
@@ -201,7 +190,7 @@ form {
     margin-right: 1%;
 }
 
-/* ici se trouve tout ce qui concerne la section .accomodation c'est à dire les deux .box (. box lodging et .box le aside) */ 
+/* section .accomodation : 2 .box ( .box lodging et .box aside) */ 
 
 .accomodation {
     margin-bottom: 3%;
@@ -220,7 +209,7 @@ form {
     color: #f2f2f2;
 }
 
-/* ici se trouve tout ce qui concerne la section .lodging ("Hébergement à Marseille") : header + .lodging_cards (contenant les 6 .cards) + footer */ 
+/* section .lodging ("Hébergement à Marseille") : header + .lodging_cards + footer */ 
 
 .lodging {
     display: flex;
@@ -273,7 +262,7 @@ form {
     font-size: large;
 }
 
-/* ici se trouve tout ce qui concerne le aside ("Les plus populaires) */ 
+/* aside ("Les plus populaires) */ 
 
 .popular_header {
     display: flex;
@@ -317,7 +306,7 @@ form {
     margin-bottom: 0%;
 }
 
-/* ici se trouve tout ce qui concerne la section .activities */
+/* section .activities */
 
 .activities h2 {
     font-size: larger;
@@ -334,9 +323,8 @@ form {
 .activities_cards a { 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     border: solid 1px white;
-    border-radius: 5px;
     width: 100%;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -360,7 +348,7 @@ form {
 
 /* fin du main */
 
-/* ici se trouve tout ce qui concerne le footer de la page, nommé .main_footer */ 
+/* footer de la page : .main_footer */ 
 
 .main_footer {
     background-color: #F2F2F2;
@@ -384,12 +372,24 @@ form {
 }
 
 
-/* ici se trouvent les media queries */
+/* media queries tablette */
 
 @media screen and (max-width: 992px) {
 
     .filters {
-        width: 95%;
+        width: 98%;
+    }
+
+    .element {
+        margin-left: 1.4em;
+    }
+
+    .icone {
+        padding: 1em 0 1em 0.4em;
+    }
+
+    .filter_name {
+        padding: 0.5em;
     }
 
     .accomodation {
@@ -421,6 +421,8 @@ form {
         height: 230px;
     }
 }
+
+/* media queries mobile */
 
 @media screen and (max-width: 767px) {
 
@@ -473,6 +475,7 @@ form {
     form {
         padding: 1em 0 1em 0;
         width: 100%;
+        justify-content: space-between;
     }
 
     .btn {
@@ -489,6 +492,7 @@ form {
     }
 
     .filters {
+        width: 95%;
         flex-direction: column;
         align-items: flex-start;
     }
