@@ -397,7 +397,19 @@ form {
         flex-direction: column;
     }
 
+    .box {
+        padding: 35px; 
+    }
+
     .lodging {
+        margin-bottom: 50px;
+    }
+
+    .cards {
+        width: 31%;
+    }
+
+    aside {
         margin-bottom: 50px;
     }
 
@@ -405,10 +417,6 @@ form {
         display: grid;
         grid-template-columns: 31% 31% 31%;
         gap: 3%;
-    }
-
-    aside {
-        margin-bottom: 50px;
     }
 
     .activities_cards {
@@ -523,7 +531,7 @@ form {
 
     .box {
         border-radius: 0%; 
-        padding: 45px 15px 15px 15px;
+        padding: 45px 10px 10px 15px;
     }
 
     aside {
@@ -545,6 +553,7 @@ form {
 
     .cards {
         width: 100%;
+        
     }
 
     .lodging_footer {
