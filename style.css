@@ -40,6 +40,13 @@ a {
     color: #000000;
 }
 
+a:visited {
+    color: #000000;
+}
+
+a:hover {
+    color:#0065FC;
+}
 
 /* .main_header : bandeau avec logo Booki et menu de navigation */ 
 
@@ -56,27 +63,24 @@ a {
     height: 29px;
 }
 
+nav {
+    width: 25%;
+}
+
 ul {
     display: flex;
+    justify-content: space-between;
     list-style-type: none;
 }
 
 li {
-    padding: 57px 20px 0px 20px;
-    margin-left: 40px;
+    padding: 57px 25px 0px 25px;
+    border-top: solid 4px #FFFFFF;
 }
 
 li:hover {
     border-top: solid 4px #0065FC;
 } 
-
-a:visited {
-    color: #000000;
-}
-
-a:hover {
-    color:#0065FC;
-}
 
 /* main : section .search , section .accomodation et section .activities */
 
@@ -168,11 +172,11 @@ form {
     align-items: center;
     border: solid 2px #D9D9D9;
     border-radius: 30px;
-    margin-left: 3em;       /*test*/
+    margin-left: 3em;
 }
 
 .icone {
-    padding: 1em 0 1em 1em;  /*test*/
+    padding: 1em 0 1em 1em;
 }
 
 .search_footer {
@@ -474,6 +478,7 @@ form {
 
     .main_header li:hover {
         border-bottom: solid 3px #0065FC;
+        border-top: none;
     }
 
     .search {
