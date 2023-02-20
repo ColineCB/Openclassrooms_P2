@@ -55,7 +55,7 @@ a:hover {
     justify-content: space-between;
     align-items: flex-end;
     height: 80px;
-    margin-bottom: 3%;
+    margin-bottom: 40px;
 }
 
 .logo {
@@ -85,7 +85,7 @@ li:hover {
 /* main : section .search , section .accomodation et section .activities */
 
 main {
-    margin-bottom: 4%;
+    margin-bottom: 40px;
 }
 
 /* section .search : .search_header (titre et p), formulaire, filtres de recherche et .search_footer */
@@ -93,23 +93,24 @@ main {
 .search {
     display: flex;
     flex-direction: column;
-    margin-bottom: 3%;
+    margin-bottom: 30px;
 }
 
 .search_header {
-    margin-bottom: 1.5%;
+    margin-bottom: 20px;
 }
 
 form {
-    margin-bottom: 1.5em;
+    margin-bottom: 15px;
     border-radius: 15px;
     width: 31%;
     display: flex;
     align-items: center;
 }
 
-.icone_location {
-    padding: 1.5em 1em;
+.icone_location.fa-solid::before {
+    height: 61px;
+    width: 60px;
     border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
     color: #000000;
@@ -118,15 +119,9 @@ form {
     align-items: center;
 }
 
-.search_btn_glass {
-    width: 100%;
-    border-radius: 0 15px 15px 0;
-    display: flex;   
-}
-
 .search_zone {
     flex-grow: 1;
-    padding: 1.25em 0 1.25em 1em;
+    padding: 20px 0 20px 10px;
     border-left: none;
     border-right: none;
     border-top: #F2F2F2 solid 1px;
@@ -138,8 +133,7 @@ form {
 }
 
 .btn {
-    flex-grow: 1;
-    padding: 0 1em 0 1em; 
+    padding: 20px 10px; 
     border-radius: 0 15px 15px 0;
     border: none;
     background-color: #0065FC;
@@ -152,14 +146,14 @@ form {
 }
 
 .filters {
-    margin-bottom: 1.5em;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
     font-weight: bold;
 }
 
 .filter_name {
-    padding: 1em; /* test */
+    padding: 10px;
 }
 
 .filters_elements {
@@ -179,11 +173,11 @@ form {
     align-items: center;
     border: solid 2px #D9D9D9;
     border-radius: 30px;
-    margin-left: 3em;
+    margin-left: 2%;
 }
 
 .icone {
-    padding: 1em 0 1em 1em;
+    padding: 10px 0 10px 10px;
 }
 
 .search_footer {
@@ -196,15 +190,15 @@ form {
     height: 30px;
     border: 1px solid #D9D9D9;
     border-radius: 20px;
-    padding-left: 0.9em;
-    padding-top: 0.9em;
-    margin-right: 1%;
+    padding-left: 11px;
+    padding-top: 12px;
+    margin-right: 10px;
 }
 
 /* section .accomodation : 2 .box ( .box lodging et .box aside) */ 
 
 .accomodation {
-    margin-bottom: 3%;
+    margin-bottom: 40px;
     display: grid;
     grid-template-columns: 63.7% 32%;
     gap: 4.3%; 
@@ -231,7 +225,7 @@ form {
 .lodging_header {
     font-size: larger;
     font-weight: bolder;
-    margin-bottom: 1em;
+    margin-bottom: 10px;
 }
 
 .lodging_cards {
@@ -243,7 +237,7 @@ form {
 .cards {
     border-radius: 20px;
     width: 30%;
-    padding: 0.7%;
+    padding: 4px;
     margin-bottom: 20px;
     background-color: #ffffff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -261,11 +255,11 @@ form {
 }
 
 .cards_txt {
-    padding-left: 3%;
+    padding-left: 10px;
 }
 
 .cards_txt p {
-    padding-bottom: 1%;
+    padding-bottom: 5px;
 }
 
 .lodging_footer {
@@ -288,8 +282,8 @@ form {
 .popular_cards {
     border-radius: 20px;
     width: 100%;
-    margin-bottom: 8%;
-    padding: 1.5%;
+    margin-bottom: 10px;
+    padding: 4px;
     background-color: #FFFFFF;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -310,11 +304,11 @@ form {
 }
 
 .popular_cards_info {
-    margin: 4%;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 0%;
+    margin-bottom: 0;
 }
 
 /* section .activities */
@@ -322,7 +316,7 @@ form {
 .activities h2 {
     font-size: larger;
     font-weight: bolder;
-    margin-bottom: 1em;
+    margin-bottom: 10px;
 }
 
 .activities_cards {
@@ -353,7 +347,7 @@ form {
 }
 
 .activities_cards a h3 {
-    margin-left: 5%;
+    margin-left: 15px;
     padding: 10px 0;
 }
 
@@ -379,7 +373,7 @@ form {
 }
 
 .footer_zone a {
-    padding-top: 1em;
+    padding-top: 10px;
 }
 
 
@@ -392,19 +386,15 @@ form {
     }
 
     .filters {
-        width: 98%;
-    }
-
-    .element {
-        margin-left: 1.4em;
+        width: 95%;
     }
 
     .icone {
-        padding: 1em 0 1em 0.4em;
+        padding: 10px;
     }
 
     .filter_name {
-        padding: 0.4em;
+        padding: 10px 5px 10px 0;
     }
 
     .accomodation {
@@ -458,11 +448,11 @@ form {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 2em;
+        padding-bottom: 20px;
     }
 
     .logo {
-        margin-bottom: 2em;
+        margin-bottom: 20px;
     }
 
     nav {
@@ -470,15 +460,16 @@ form {
     }
 
     .main_header a {
-        padding: 1.3em 0 1.3em 0;
+        padding: 13px 0 13px 0;
     }
 
     li {
         display: flex;
         justify-content: stretch;
+        text-align: center;
         width: 100%;
         margin: 0;
-        padding: 0 4em 0 4em;
+        padding: 0;
         border-bottom: solid 3px #F2F2F2;
     }
 
@@ -488,12 +479,16 @@ form {
     }
 
     .search {
-        padding: 0 1em 0 1em;
-        width: 98%;
+        padding: 0 10px 0 10px;
     }
 
     form {
         width: 100%;
+    }
+
+    .search_zone {
+        flex-basis: 100%;
+        min-width: 0;
     }
 
     .search_btn_glass {
@@ -507,7 +502,7 @@ form {
 
     .magnifying_glass::before {
         display: inline;
-        padding: 1em;
+        padding: 20px;
         border-radius: 0 15px 15px 0;
         border: none;
         background-color: #0065FC;
@@ -523,27 +518,27 @@ form {
 
     .filters_elements {
         width: 100%;
-        padding-top: 1.5em;
+        padding-top: 15px;
         display: grid;
         grid-template-columns: 50% 50%;
-        gap: 1.5em;
+        gap: 10px;
     }
 
     .filter_name {
-        font-size: small;
-        padding: 1em 0.2em 1em 0;
+        font-size: 0.7em;
+        padding: 10px 0;
     }
 
     .element {
-        margin-left: 0px; 
+        margin-left: 2%; 
     }
 
     .icone {
-        padding: 1em 0.2em 1em 0.5em;
+        padding: 7px;
     }
 
     .search_footer .circle {
-        margin-right: 1em;
+        margin-right: 10px;
     }
 
     .accomodation {
@@ -592,7 +587,7 @@ form {
     }
 
     .activities_cards a {
-        margin-bottom: 1em;
+        margin-bottom: 10px;
     }
 
     .main_footer {
@@ -600,7 +595,7 @@ form {
     }
 
     .footer_zone {
-        padding-bottom: 2em;
+        padding-bottom: 20px;
     }
 
     .footer_zone h2 {
