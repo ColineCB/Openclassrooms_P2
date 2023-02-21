@@ -81,6 +81,10 @@ li:hover {
     border-top: solid 4px #0065FC;
 } 
 
+li a {
+    cursor: pointer;
+}
+
 /* main : section .search , section .accomodation et section .activities */
 
 main {
