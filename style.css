@@ -59,7 +59,6 @@ a:hover {
 }
 
 .logo {
-    width: 61px;
     height: 29px;
 }
 
@@ -164,7 +163,7 @@ form {
 
 .filters_elements .element:hover {
     background-color: #deebff;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 15px 0px;
     transform: scale(1.05);
 }
 
@@ -240,7 +239,7 @@ form {
     padding: 4px;
     margin-bottom: 20px;
     background-color: #ffffff;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 15px 0p
 }
 
 .cards:hover {
@@ -285,7 +284,7 @@ form {
     margin-bottom: 10px;
     padding: 4px;
     background-color: #FFFFFF;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 15px 0p;
 }
 
 .popular_cards:hover {
@@ -332,7 +331,7 @@ form {
     border: solid 1px white;
     width: 100%;
     border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 15px 0p;
 }
 
 .activities_cards a:hover {
