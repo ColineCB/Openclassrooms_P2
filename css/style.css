@@ -589,6 +589,10 @@ form {
         flex-direction: column;
     }
 
+    .activities_cards img {
+        height: 100px;
+    }
+
     .activities_cards a {
         margin-bottom: 10px;
     }
